@@ -22,7 +22,7 @@ class AdminSeeder extends Seeder
         User::create([
             'username' => 'kmhenn',
             'email' => 'kaithennessy@gmail.com',
-            'password' => 'test123',
+            'password' => env('DEFAULT_ADMIN_PASSWORD'),
             'default_region' => CrochetRegions::US,
             'role' => UserRoles::ADMINISTRATOR->value
         ]);
