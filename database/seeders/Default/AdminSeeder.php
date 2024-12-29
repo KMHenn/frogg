@@ -2,6 +2,7 @@
 
 namespace Database\Seeders\Default;
 
+use App\Support\Enums\CrochetRegions;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
@@ -22,6 +23,7 @@ class AdminSeeder extends Seeder
             'username' => 'kmhenn',
             'email' => 'kaithennessy@gmail.com',
             'password' => 'test123',
+            'default_region' => CrochetRegions::US,
             'role' => UserRoles::ADMINISTRATOR->value
         ]);
     }
